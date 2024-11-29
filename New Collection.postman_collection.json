@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "cc328cd8-568c-4def-b324-7b62f043dafc",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19833720"
+	},
+	"item": [
+		{
+			"name": "Procesador de Texto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "3\\the force is strong in this one\r\n7\\take what you can, give nothing back\r\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/texto/procesar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"texto",
+						"procesar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Ready",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/health/ready",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health",
+						"ready"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
